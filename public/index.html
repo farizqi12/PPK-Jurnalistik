@@ -15,35 +15,54 @@
     <!-- --------------------------------- -->
   </head>
   <!-- __________________________________-->
-  <body class="bg-gradient-to-br from-white to-gray-400">
+  <body class="bg-gradient-to-b from-white to-gray-400">
     <section class="min-h-screen flex items-center justify-center">
       <div
-        class="bg-green-400 flex rounded-2xl shadow-lg max-w-3xl shadow-slate-600 p-5"
+        class="bg-green-400 flex rounded-2xl shadow-lg max-w-2xl shadow-slate-600 p-5"
       >
         <!-- form -->
         <div class="sm:w-1/2 px-16">
-          <h2 class="font-extrabold text-xl font-Poppins">Login</h2>
-          <p class="text-sm my-4">Gunakan akun yang sudah di beri oleh admin</p>
+          <h2 class="font-extrabold text-xl">Login</h2>
+          <p class="text-sm my-4 font-extralight">
+            Gunakan akun yang sudah di beri oleh admin
+          </p>
 
           <form action="" class="flex flex-col gap-4">
             <input
-              class="p-2 rounded-xl shadow-inner shadow-slate-800 focus:outline-none focus:ring-4 focus: ring-teal-600"
+              class="p-2 rounded-xl shadow-md focus:outline-none focus:ring-4 focus: ring-teal-600 text-sm"
               type="text"
-              name="email"
-              placeholder="Masukkan email anda"
+              name="username"
+              placeholder="Masukkan username anda"
             />
-            <input
-              class="p-2 rounded-xl shadow-inner shadow-slate-800 focus:outline-none focus:ring-4 focus: ring-teal-600"
-              type="password"
-              name="password"
-              placeholder="Masukkan Paswword"
-            />
-            <button
-              class="text-slate-400 bg-slate-100 py-2 rounded-full shadow-inner shadow-slate-700 hover:bg-sky-400 focus:bg-sky-600 hover:text-white hover:shadow-lg hover:shadow-slate-600"
+            <div class="relative">
+              <input
+                class="p-2 rounded-xl shadow-md focus:outline-none focus:ring-4 focus: ring-teal-600 text-sm w-full"
+                type="password"
+                name="password"
+                placeholder="Masukkan Paswword"
+              />
+            </div>
+            <a
+              href="home.html"
+              class="text-center font-bold text-slate-400 bg-slate-100 py-2 mt-6 rounded-full shadow-inner shadow-slate-700 hover:bg-sky-400 focus:bg-sky-600 hover:text-white hover:shadow-lg hover:shadow-slate-600 gr"
             >
               Login
-            </button>
+            </a>
           </form>
+
+          <div class="mt-10 grid grid-cols-3 items-center text-gray-500">
+            <hr class="border-gray-500" />
+            <p class="text-center">Atau</p>
+            <hr class="border-gray-500" />
+          </div>
+
+          <div
+            class="mt-7 text-sm underline opacity-50 hover:text-sky-500 hover:font-semibold hover:opacity-100 group:"
+          >
+            <a href="#">
+              <p class="group-hover:shadow-xl">Lupa kata sandi anda?</p>
+            </a>
+          </div>
         </div>
         <!-- image -->
         <div class="sm:block hidden w-1/2">
