@@ -11,6 +11,17 @@
       * {
         font-family: "Poppins", sans-seri;
       }
+      @media (max-width: 640px) {
+        .bg-green-300 {
+          padding: 20px;
+        }
+        .sm\:w-1\/2 {
+          width: 100%;
+        }
+        .sm\:block.hidden {
+          display: none;
+        }
+      }
     </style>
     <!-- --------------------------------- -->
   </head>
@@ -66,7 +77,11 @@
         </div>
         <!-- image -->
         <div class="sm:block hidden w-1/2">
-          <img src="img/Logo Utama.png" alt="" class="bg-slate-200 rounded-2xl" />
+          <img
+            src="img/Logo Utama.png"
+            alt=""
+            class="bg-slate-200 rounded-2xl"
+          />
         </div>
       </div>
     </section>
